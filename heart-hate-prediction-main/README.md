@@ -23,4 +23,3 @@ stomach单特征预测run时要比，三特征输入预测run状态的心率结�
 新增说明：针对于三个加速度计的信号作为输入预测jog run walk状态下的心率，进行了真实值和预测值对比的绘图，横坐标是时间，纵坐标心率的计算公式是|60/相邻极大值点的时间差值|。用同样的方法对chest加速计作为单独输入
 预测jog run walk状态下的心率的预测结果进行了绘图。通局部峰值提取 (find_peaks) 提取指定列中的局部极大值索引，可以通过调节 height 参数筛除噪声较大的小峰值。绘图结果和绘图代码保存在heart_rate_results文件中。human fliter walk结果是
 手动筛选了walk.result.csv中的极值点并绘图的结果，用于和自动提取极值点的结果做对比
-https://github.com/YUZHEZHONG/heart-hate-prediction
